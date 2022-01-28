@@ -1,0 +1,12 @@
+Flask
+Flask_Cors
+numpy
+pydub
+ibm_cloud_sdk_core
+nltk
+ibm_watson
+PyJWT
+gunicorn
+Jinja2
+
+
