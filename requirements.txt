@@ -7,5 +7,6 @@ nltk
 PyJWT
 gunicorn
 Jinja2
+azure-cognitiveservices-speech
 
 
