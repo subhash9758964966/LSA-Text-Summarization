@@ -33,6 +33,7 @@ jobs:
           sudo apt-get install ffmpeg 
           pip install -r requirements.txt
           pip install pydub
+          pip install azure.cognitiveservices
           pip install azure-cognitiveservices-speech
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
