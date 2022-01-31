@@ -42,7 +42,7 @@ def predict():
         stt.set_service_url(url)
 
         with open("meta.mp3", mode="rb")  as mp3:
-                response = stt.recognize(audio=mp3, model='en-GB_NarrowbandModel', content_type='audio/mp3', inactivity_timeout=360)
+                response = stt.recognize(audio=mp3, model='en-IN_Telephony', content_type='audio/mp3', smart_formatting = True, inactivity_timeout=360)
                 real_text = []
                 confident = []
                 for items in response.result["results"]:
