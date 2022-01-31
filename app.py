@@ -76,7 +76,7 @@ def speech_to_text(audio_filename ):
     while not done:
         time.sleep(.5)
             
-    print("Printing all results:")
+    print("Printing all results:   ")
     print(all_results)
     return all_results
 
