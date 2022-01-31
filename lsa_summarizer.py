@@ -8,9 +8,10 @@ from warnings import warn
 from nltk.tokenize import sent_tokenize, word_tokenize
 from numpy.linalg import svd as singular_value_decomposition
 from base_summarizer import BaseSummarizer
-from nltk.corpus import stopwords
+
 
 class LsaSummarizer(BaseSummarizer):
+    from nltk.corpus import stopwords
     MIN_DIMENSIONS = 3
     REDUCTION_RATIO = 1/1
 
