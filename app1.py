@@ -116,11 +116,14 @@ def predict():
         
         
         result_file = speech_to_text("test.wav")
+        text_item =' '.join(result_file)
         with open("original_text.txt", "w") as text_file:
-            text_file.write(result_file[0])
-        # response_result = result_fun("meta.mp3")
+                text_file.write(text_item)
+            # response_result = result_fun("meta.mp3")
         final_text, summary = result("original_text.txt")
         os.remove("meta.mp3")
+        # os.remove("test.wav")
+        os.remove("original_text.txt")
         return render_template('home.html',prediction_probability="Orignal text . {}".format(final_text), prediction_emotion = "Summary. {}".format(summary))
     return render_template("home.html")
 
