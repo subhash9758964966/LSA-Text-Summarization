@@ -9,6 +9,9 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 from numpy.linalg import svd as singular_value_decomposition
 from base_summarizer import BaseSummarizer
 
+nltk.download("punkt", quiet=True)
+nltk.download("stopwords", quiet=True)
+
 
 class LsaSummarizer(BaseSummarizer):
     from nltk.corpus import stopwords
