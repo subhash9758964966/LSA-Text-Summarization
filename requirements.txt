@@ -8,8 +8,8 @@ PyJWT
 gunicorn
 Jinja2
 azure-cognitiveservices-vision-computervision
-azure-cognitiveservices-speech
-azure-cognitiveservices
+
+
 
 
 
