@@ -32,7 +32,7 @@ def speech_to_text(audio_filename ):
     audio_input = speechsdk.audio.AudioConfig(filename=audio_filename)
 
     # Creates a recognizer with the given settings
-    speech_config.speech_recognition_language="en-US"
+    speech_config.speech_recognition_language="en-IN"
     speech_config.request_word_level_timestamps()
     speech_config.enable_dictation()
     speech_config.output_format = speechsdk.OutputFormat(1)
